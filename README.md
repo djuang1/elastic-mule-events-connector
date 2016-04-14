@@ -1,24 +1,33 @@
-# ElasticMuleEvents Anypoint Connector
+# Elasticsearch Mule Events Anypoint Connector
 
-[Connector description including destination service or application with]
+Anypoint Connector provides the ability to write events directly to Elasticsearch in a Mule Event specific format.
+
+# Example Mule Event
+
+`{  
+   "application":"test-elk",
+   "timestamp":"2016-04-14T12:42:51274-0500",
+   "notificationType":"EventNotification",
+   "action":"custom event",
+   "resourceIdentifier":"test-elkFlow",
+   "source":"test-elkFlow",
+   "muleMessage":"Hello World!",
+   "path":null,
+   "annotations":null,
+   "muleMessageId":"4f55dba0-0268-11e6-ad7d-acbc32b36e6b",
+   "customEventProperties":null,
+   "customEventName":null,
+   "@version":"1",
+   "@timestamp":"2016-04-14T12:42:51.274-0500",
+   "host":"localhost",
+   "type":"events"
+}`
 
 # Mule supported versions
-Examples:
-Mule 3.4.x, 3.5.x
-Mule 3.4.1
+Mule 3.5.x
 
-# [Destination service or application name] supported versions
-Example:
-Oracle E-Business Suite 12.1 and above.
-
-#Service or application supported modules
-Example:
-Oracle CRM
-Oracle Financials
-or 
-Salesforce API v.24
-Salesforce Metadata API
-
+# Elasticsearch supported versions
+1.4+
 
 # Installation 
 For beta connectors you can download the source code and build it with devkit to find it available on your local repository. Then you can add it to Studio
