@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<namespace xmlns="http://www.mulesoft.org/schema/mule/tooling.attributes" xmlns:mule="http://www.mulesoft.org/schema/mule/core" url="http://www.mulesoft.org/schema/mule/elastic-mule-events" prefix="elastic-mule-events">
+  <global-cloud-connector versions="[3.5.0,8.0.0]" caption="Elastic Mule Events" description="" icon="" localId="parentConfig" image="" abstract="true" extends="http://www.mulesoft.org/schema/mule/elastic-mule-events/abstractElastic-mule-eventsConnectorGeneric"></global-cloud-connector>
+  <global-cloud-connector versions="[3.5.0,8.0.0]" caption="Elastic Mule Events: Configuration" description="Global Configuration configuration information." icon="icons/small/elastic-mule-events-connector-24x16.png" localId="config" image="icons/large/elastic-mule-events-connector-48x32.png" abstract="false" extends="http://www.mulesoft.org/schema/mule/elastic-mule-events/parentConfig" connectivityTesting="off" metaData="static" metaDataKeyDisplay="DISPLAY_NAME" supportsUserDefinedMetaData="false">
+    <attribute-category caption="General" description="Elastic-mule-events configuration properties.">
+      <group id="elastic-mule-eventsGenericProperties" caption="Basic Settings">
+        <name name="name" caption="Name" description="Give a name to this configuration so it can be later referenced by config-ref." required="true"></name>
+      </group>
+      <group id="general" caption="General">
+        <string defaultValue="52.201.237.3" name="host" caption="Host" description="Elastic Host." supportsExpressions="false" required="false" javaType="java.lang.String"></string>
+        <integer defaultValue="9300" min="0" step="1" name="port" caption="Port" description="Elastic Port." supportsExpressions="false" required="false" javaType="java.lang.Integer"></integer>
+        <string defaultValue="yyyy-MM-dd'T'HH:mm:ssSZ" name="dateFormat" caption="Date Format" description="Elastic Date Format." supportsExpressions="false" required="false" javaType="java.lang.String"></string>
+        <string defaultValue="logstash-2016.04.08" name="index" caption="Index" description="Elastic Index." supportsExpressions="false" required="false" javaType="java.lang.String"></string>
+        <string defaultValue="events" name="type" caption="Type" description="Elastic Type." supportsExpressions="false" required="false" javaType="java.lang.String"></string>
+      </group>
+    </attribute-category>
+  </global-cloud-connector>
+  <cloud-connector caption="Abstractelastic-mule-eventsconnectorgeneric" description="Interact with Elastic-mule-events." icon="icons/small/elastic-mule-events-connector-24x16.png" localId="abstractElastic-mule-eventsConnectorGeneric" image="icons/large/elastic-mule-events-connector-48x32.png" abstract="true">
+    <attribute-category caption="General" description="General.">
+      <group id="abstractElastic-mule-eventsConnectorGeneric" caption="Basic Settings">
+        <globalRef requiredType="http://www.mulesoft.org/schema/mule/elastic-mule-events/config" name="config-ref" caption="Connector Configuration" description="Specify which configuration to use for this invocation." required="true"></globalRef>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector versions="[3.5.0,8.0.0]" aliasId="org.mule.tooling.ui.modules.core.pattern.elastic-mule-events" caption="Elastic Mule Events" description="" icon="icons/small/elastic-mule-events-connector-24x16.png" localId="elastic-mule-events-connector" image="icons/large/elastic-mule-events-connector-48x32.png" extends="http://www.mulesoft.org/schema/mule/elastic-mule-events/abstractElastic-mule-eventsConnectorGeneric">
+    <attribute-category caption="General" description="General.">
+      <group id="elastic-mule-eventsConnectorGeneric" caption="Basic Settings">
+        <modeSwitch alwaysCombo="true" name="Elastic-mule-events operations to execute" caption="Operation" description="Operation.">
+          <no-operation abstractElement="http://www.mulesoft.org/schema/mule/elastic-mule-events/abstractElastic-mule-eventsConnectorGeneric" versions="[3.5.0,8.0.0]" connector-name="processor"></no-operation>
+          <mode modeId="http://www.mulesoft.org/schema/mule/elastic-mule-events/log-mule-event" modeLabel="Log Mule Event"></mode>
+        </modeSwitch>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="java.lang.Object" caption="Log Mule Event" icon="icons/small/elastic-mule-events-connector-24x16.png" localId="log-mule-event" image="icons/large/elastic-mule-events-connector-48x32.png" abstract="true" extends="http://www.mulesoft.org/schema/mule/elastic-mule-events/abstractElastic-mule-eventsConnectorGeneric" metaData="static">
+    <attribute-category caption="General" description="General.">
+      <group id="general" caption="General">
+        <string name="eventName" caption="Event Name" description="A name for the business event to track. Parameter is a String." required="false" javaType="java.lang.String"></string>
+        <string name="keyPerformanceIndicator" caption="Key Performance Indicator" description="Single field to track KPIs. Similar to Custom Business Events. Parameter is a String." required="false" javaType="java.lang.String"></string>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+</namespace>

@@ -1,0 +1,17 @@
+org/mule/modules/elasticmuleevents/generated/devkit/SplashScreenAgent.class
+org/mule/modules/elasticmuleevents/generated/adapters/ElasticMuleEventsConnectorCapabilitiesAdapter.class
+org/mule/modules/elasticmuleevents/generated/config/ElasticMuleEventsNamespaceHandler.class
+org/mule/modules/elasticmuleevents/generated/adapters/ElasticMuleEventsConnectorProcessAdapter.class
+org/mule/modules/elasticmuleevents/ElasticMuleEventsConnector.class
+org/mule/modules/elasticmuleevents/config/ConnectorConfig.class
+org/mule/modules/elasticmuleevents/generated/agents/DefaultSplashScreenAgent.class
+org/mule/modules/elasticmuleevents/generated/config/ElasticMuleEventsConnectorConnectorConfigConfigDefinitionParser.class
+org/mule/modules/elasticmuleevents/generated/adapters/ElasticMuleEventsConnectorConnectorConfigBasicAdapter.class
+org/mule/modules/elasticmuleevents/generated/processors/LogMuleEventMessageProcessor.class
+org/mule/modules/elasticmuleevents/generated/adapters/ElasticMuleEventsConnectorMetadataAdapter.class
+org/mule/modules/elasticmuleevents/generated/config/LogMuleEventDefinitionParser.class
+org/mule/tooling/ui/contribution/ElasticMuleEventsActivator.class
+org/mule/modules/elasticmuleevents/generated/processors/LogMuleEventMessageProcessor$1.class
+org/mule/modules/elasticmuleevents/generated/adapter/PoolManager.class
+org/mule/modules/elasticmuleevents/generated/adapters/ElasticMuleEventsConnectorProcessAdapter$1.class
+org/mule/modules/elasticmuleevents/generated/adapters/ElasticMuleEventsConnectorLifecycleInjectionAdapter.class

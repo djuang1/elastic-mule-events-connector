@@ -1,0 +1,3 @@
+<!-- BEGIN_INCLUDE(elastic-mule-events:logmuleevent) -->
+    <elastic-mule-events:logmuleevent config-ref="" message="#[map-payload:message]" eventName="#[map-payload:eventName]" />
+<!-- END_INCLUDE(elastic-mule-events:logmuleevent) -->
