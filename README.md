@@ -33,11 +33,11 @@ Mule 3.5.x
 For beta connectors you can download the source code and build it with devkit to find it available on your local repository. Then you can add it to Studio
 
 For released connectors you can download them from the update site in Anypoint Studio. 
-Open Anypoint Studio, go to Help → Install New Software and select Anypoint Connectors Update Site where you’ll find all avaliable connectors.
+Open Anypoint Studio, go to Help → Install New Software and select Anypoint Connectors Update Site where you’ll find all available connectors.
 
 #Usage
-For information about usage our documentation at http://github.com/djuang1/elastic-mule-events.
+For information about usage our documentation at http://github.com/djuang1/elastic-mule-event-connectors.
 
 # Reporting Issues
 
-We use GitHub:Issues for tracking issues with this connector. You can report new issues at this link http://github.com/djuang1/elastic-mule-events/issues.
+We use GitHub:Issues for tracking issues with this connector. You can report new issues at this link http://github.com/djuang1/elastic-mule-events-connector/issues.
