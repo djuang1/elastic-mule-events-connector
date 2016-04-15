@@ -36,7 +36,7 @@ For released connectors you can download them from the update site in Anypoint S
 Open Anypoint Studio, go to Help → Install New Software and select Anypoint Connectors Update Site where you’ll find all available connectors.
 
 #Usage
-For information about usage our documentation at http://github.com/djuang1/elastic-mule-event-connectors.
+For information about usage our documentation at http://github.com/djuang1/elastic-mule-events-connectors.
 
 # Reporting Issues
 
