@@ -1,4 +1,4 @@
-# Elasticsearch Mule Events Anypoint Connector
+# Elasticsearch Mule Events Connector
 
 Anypoint Connector provides the ability to write events directly to Elasticsearch in a Mule Event specific format.
 
